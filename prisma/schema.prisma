@@ -1,0 +1,13 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Le modèle de données est volontairement vide.
+// Il doit être construit à partir de votre analyse du cahier des charges.
+// Ne transformez pas automatiquement chaque concept métier en table :
+// commencez par modéliser le domaine, puis décidez ce qui doit être persisté.
